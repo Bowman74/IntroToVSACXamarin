@@ -21,6 +21,8 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|iPhone = Release|iPhone
 		Release|iPhoneSimulator = Release|iPhoneSimulator
+		QA|iPhone = QA|iPhone
+		QA|Any CPU = QA|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{33550679-F7B2-439D-8C91-B5DC73405E3B}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
@@ -35,6 +37,9 @@ Global
 		{33550679-F7B2-439D-8C91-B5DC73405E3B}.Release|iPhone.Build.0 = Release|iPhone
 		{33550679-F7B2-439D-8C91-B5DC73405E3B}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{33550679-F7B2-439D-8C91-B5DC73405E3B}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{33550679-F7B2-439D-8C91-B5DC73405E3B}.QA|Any CPU.ActiveCfg = QA|iPhone
+		{33550679-F7B2-439D-8C91-B5DC73405E3B}.QA|iPhone.ActiveCfg = QA|iPhone
+		{33550679-F7B2-439D-8C91-B5DC73405E3B}.QA|iPhone.Build.0 = QA|iPhone
 		{EC4D4F2D-1770-4573-B107-922810BF271F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EC4D4F2D-1770-4573-B107-922810BF271F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC4D4F2D-1770-4573-B107-922810BF271F}.Debug|iPhone.ActiveCfg = Debug|Any CPU
@@ -47,6 +52,9 @@ Global
 		{EC4D4F2D-1770-4573-B107-922810BF271F}.Release|iPhone.Build.0 = Release|Any CPU
 		{EC4D4F2D-1770-4573-B107-922810BF271F}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{EC4D4F2D-1770-4573-B107-922810BF271F}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{EC4D4F2D-1770-4573-B107-922810BF271F}.QA|iPhone.ActiveCfg = QA|Any CPU
+		{EC4D4F2D-1770-4573-B107-922810BF271F}.QA|Any CPU.ActiveCfg = QA|Any CPU
+		{EC4D4F2D-1770-4573-B107-922810BF271F}.QA|Any CPU.Build.0 = QA|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
