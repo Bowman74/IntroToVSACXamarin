@@ -20,11 +20,11 @@ namespace VSACXamarin
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
-            throw new InvalidCastException("Our test error");
             var item = args.SelectedItem as Item;
             if (item == null)
                 return;
 
+            Microsoft.AppCenter.Analytics.Analytics.TrackEvent("Item Selected", new Dictionary<string, string> { { "id", item.Id }, {"description", item.Description} });
             await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
 
             // Manually deselect item
