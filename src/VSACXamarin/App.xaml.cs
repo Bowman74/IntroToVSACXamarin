@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Microsoft.AppCenter.Crashes;
 using Xamarin.Forms;
 
 namespace VSACXamarin
@@ -22,6 +22,8 @@ namespace VSACXamarin
                 MainPage = new MainPage();
             else
                 MainPage = new NavigationPage(new MainPage());
+
+            Crashes.GenerateTestCrash();
         }
     }
 }
