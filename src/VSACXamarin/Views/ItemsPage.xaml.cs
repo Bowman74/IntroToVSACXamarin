@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Microsoft.AppCenter.Crashes;
 
 namespace VSACXamarin
 {
@@ -19,6 +20,7 @@ namespace VSACXamarin
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
+            Crashes.GenerateTestCrash();
             var item = args.SelectedItem as Item;
             if (item == null)
                 return;
