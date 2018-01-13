@@ -20,7 +20,7 @@ namespace VSACXamarin
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
-            Crashes.GenerateTestCrash();
+            throw new InvalidCastException("Our test error");
             var item = args.SelectedItem as Item;
             if (item == null)
                 return;
