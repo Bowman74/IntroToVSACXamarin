@@ -24,6 +24,8 @@ namespace VSACXamarin.Droid
 
             base.OnCreate(bundle);
 
+            Push.SetSenderId("311171834315");
+
             AppCenter.Start("6c816ef5-b91e-4587-8826-67856519cfff", typeof(Analytics), typeof(Crashes), typeof(Push));
             
             global::Xamarin.Forms.Forms.Init(this, bundle);
