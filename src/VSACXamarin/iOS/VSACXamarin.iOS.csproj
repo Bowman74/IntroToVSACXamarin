@@ -49,7 +49,7 @@
     <PlatformTarget>x86</PlatformTarget>
     <MtouchUseLlvm>true</MtouchUseLlvm>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
-    <CodesignProvision>com.lyndaclass.adhoc.VSACXamarin</CodesignProvision>
+    <CodesignProvision>com.lyndaclass.VSACXamarin</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType></DebugType>
@@ -65,6 +65,7 @@
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
     <CodesignProvision>com.lyndaclass.VSACXamarin</CodesignProvision>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -97,14 +98,14 @@
     <OutputPath>bin\iPhone\QA</OutputPath>
     <DefineConstants>__IOS__;__MOBILE__;__UNIFIED__;QA;ENABLE_TEST_CLOUD;</DefineConstants>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignKey>iPhone Distribution: Magenic Technologies, Inc.</CodesignKey>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
     <MtouchVerbosity></MtouchVerbosity>
     <MtouchFloat32>true</MtouchFloat32>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
-    <CodesignProvision></CodesignProvision>
+    <CodesignProvision>com.lyndaclass.VSACXamarin</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
