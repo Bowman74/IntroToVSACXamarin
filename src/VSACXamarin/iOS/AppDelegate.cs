@@ -8,6 +8,7 @@ using UIKit;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Push;
 
 namespace VSACXamarin.iOS
 {
@@ -17,7 +18,7 @@ namespace VSACXamarin.iOS
         public override bool FinishedLaunching(UIApplication uiApplication, NSDictionary launchOptions)
         {
             AppCenter.Start("e0bb52e8-e079-466c-9a2c-6a13d5123d63",
-                   typeof(Analytics), typeof(Crashes));
+                   typeof(Analytics), typeof(Crashes), typeof(Push));
             
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
