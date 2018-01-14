@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
-using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Analytics;
 
 namespace VSACXamarin
 {
@@ -24,7 +24,7 @@ namespace VSACXamarin
             if (item == null)
                 return;
 
-            Microsoft.AppCenter.Analytics.Analytics.TrackEvent("Item Selected", new Dictionary<string, string> { { "id", item.Id }, {"description", item.Description} });
+            Analytics.TrackEvent("Item Selected", new Dictionary<string, string> { { "id", item.Id }, {"description", item.Description} });
             await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
 
             // Manually deselect item

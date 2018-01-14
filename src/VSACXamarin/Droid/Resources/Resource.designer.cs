@@ -26,6 +26,7 @@ namespace VSACXamarin.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Microsoft.AppCenter.Push.Android.Resource.String.library_name = global::VSACXamarin.Droid.Resource.String.library_name;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::VSACXamarin.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -3729,6 +3730,9 @@ namespace VSACXamarin.Droid
 			
 			// aapt resource value: 0x7f090038
 			public const int character_counter_pattern = 2131296312;
+			
+			// aapt resource value: 0x7f09003e
+			public const int library_name = 2131296318;
 			
 			// aapt resource value: 0x7f090000
 			public const int mr_button_content_description = 2131296256;
